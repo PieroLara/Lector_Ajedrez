@@ -9,6 +9,22 @@ import modelo.ajedrez.motor.fichas.Fichas;
 
 public class Tablero {
 
+	public HashMap<Integer, Casilla> getTableroJuego() {
+		return tableroJuego;
+	}
+
+	public void setTableroJuego(HashMap<Integer, Casilla> tableroJuego) {
+		this.tableroJuego = tableroJuego;
+	}
+
+	public HashMap<Integer, Fichas> getTodasFichas() {
+		return todasFichas;
+	}
+
+	public void setTodasFichas(HashMap<Integer, Fichas> todasFichas) {
+		this.todasFichas = todasFichas;
+	}
+
 	private HashMap<Integer, Casilla> tableroJuego;
 	private HashMap<Integer, Fichas> todasFichas;
 

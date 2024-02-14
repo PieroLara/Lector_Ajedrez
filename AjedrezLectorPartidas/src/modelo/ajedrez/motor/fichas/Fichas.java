@@ -1,6 +1,8 @@
 package modelo.ajedrez.motor.fichas;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+
 import controlador.gestor.motor.movimientos.Movimientos;
 import modelo.ajedrez.motor.tablero.Tablero;
 
@@ -36,9 +38,10 @@ public abstract class Fichas {
 		return esCapturada;
 	}
 
-	public abstract ArrayList<Movimientos> calculaMovimientosLegales(final Tablero tablero);
+	public abstract HashMap<Integer,ArrayList<Movimientos>> calculaMovimientosLegales(final Tablero tablero);
 
 	public abstract Fichas moverPieza(Movimientos movimiento);
+	public abstract Fichas capturarPieza(Movimientos movimiento, Fichas fichaCapturada);
 
 	public Color getColorFicha() {
 
