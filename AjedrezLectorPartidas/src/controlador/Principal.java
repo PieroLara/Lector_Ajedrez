@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
+import controlador.gestor.motor.movimientos.Movimientos;
 import controlador.gestorDocumentos.GestorXML;
 import modelo.ajedrez.motor.tablero.Tablero;
 import modelo.ajedrez.registros.Partidas;
@@ -39,7 +40,10 @@ public class Principal {
 						+ nuevaPartida.toString());
 				break;
 			case 3:
-				muestraTableros(nuevaPartida);
+				
+				new Movimientos().creaMapaMovimientos("Reti - Tartakower", totalPartidas);
+				
+				//muestraTableros(nuevaPartida);
 				break;
 			case 4:
 				GestorXML.guardaPartida(totalPartidas);
@@ -84,7 +88,7 @@ public class Principal {
 		return nuevaPartida;
 	}
 
-	public static void muestraTableros(Partidas partidaEnsenyar) {
+	/*public static void muestraTableros(Partidas partidaEnsenyar) {
 		PreguntasUsuario pregunton = new PreguntasUsuario();
 		int posicion = 0;
 		Tablero tablero = Tablero.creaTableroInicial();
@@ -107,5 +111,5 @@ public class Principal {
 			System.err.println("La partida introducida no contiene valores que puedan ser representados");
 		}
 
-	}
+	}*/
 }

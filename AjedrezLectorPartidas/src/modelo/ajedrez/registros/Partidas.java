@@ -16,16 +16,16 @@ public class Partidas {
 	private HashMap<String, ArrayList<String>> todasLasJugadas=new HashMap<String, ArrayList<String>>();
 	private String nombreArchivo;
 	private File fichero = null;
-	private ArrayList<Tablero> listadoTablero;
+	//private ArrayList<Tablero> listadoTablero;
 
-	public ArrayList<Tablero> getListadoTablero() {
+	/*public ArrayList<Tablero> getListadoTablero() {
 		return listadoTablero;
 	}
 
 	public void setListadoTablero(ArrayList<Tablero> listadoTablero) {
 		this.listadoTablero = listadoTablero;
 	}
-
+*/
 	public Partidas() {
 	}
 

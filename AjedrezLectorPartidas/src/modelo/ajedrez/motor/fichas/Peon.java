@@ -45,14 +45,14 @@ public class Peon extends Fichas {
 			}
 		}
 		mapaMovimientosPeon.put(this.posicionFicha, listaMovimientosPeon);
-		
+
 		return mapaMovimientosPeon;
 	}
 
 	@Override
 	public Fichas moverPieza(Movimientos movimiento) {
-//this.posicionFicha= movimiento;
-		
+		//this.posicionFicha = movimiento.;
+
 		return null;
 	}
 

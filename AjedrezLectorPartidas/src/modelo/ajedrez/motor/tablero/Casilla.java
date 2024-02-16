@@ -34,8 +34,9 @@ public abstract class Casilla {
 	}
 
 	public static Casilla creaCasilla(final int coordenadaCasilla, final Fichas ficha) {
-		return ficha != null ? new CasillaOcupada(coordenadaCasilla, ficha)
-				: MAPA_CASILLAS_VACIAS_CACHE.get(coordenadaCasilla);
+		return null; 
+				//ficha != null ? new CasillaOcupada(coordenadaCasilla, ficha)
+			//	: MAPA_CASILLAS_VACIAS_CACHE.get(coordenadaCasilla);
 	}
 
 	public static final class CasillaVacia extends Casilla {
